@@ -1,0 +1,26 @@
+{
+	"name": "@cronch/z3",
+	"version": "0.1.0",
+	"description": "z3 for Cloudflare Workers: single-threaded, growable memory, synchronous SMT-LIB checks",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./z3.wasm": "./z3.wasm",
+		"./z3.sha256": "./z3.sha256"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"z3.mjs",
+		"z3.wasm",
+		"z3.sha256"
+	],
+	"scripts": {
+		"build": "../scripts/build.sh",
+		"test": "node --test"
+	}
+}
