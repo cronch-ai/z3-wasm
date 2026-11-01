@@ -1,15 +1,19 @@
 {
-  "name": "template",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "prepare": "simple-git-hooks"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.6.4",
-    "simple-git-hooks": "2.14.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx biome check --staged --no-errors-on-unmatched"
-  }
+	"name": "z3-wasm-tooling",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "./scripts/build.sh",
+		"test": "npm test --prefix javascript",
+		"lint": "biome ci .",
+		"format": "biome check --write .",
+		"prepare": "simple-git-hooks"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.6.4",
+		"simple-git-hooks": "2.14.0"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx biome check --staged --no-errors-on-unmatched"
+	}
 }

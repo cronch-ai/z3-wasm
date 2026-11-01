@@ -148,3 +148,9 @@ dist
 
 # Gleam
 /build/
+
+# z3's source and build tree, and what the build makes
+/build/
+javascript/z3.mjs
+javascript/z3.wasm
+javascript/z3.sha256
