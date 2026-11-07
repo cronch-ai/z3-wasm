@@ -33,3 +33,7 @@ npm run lint
 ```
 
 CI caches the build until `versions.env`, `scripts/build.sh` or `src/` changes. A push to `main` that changes `javascript/package.json`'s version publishes a GitHub release with the npm tarball, `z3.wasm` and `z3.sha256`.
+
+## License
+
+Apache 2.0 for this repo's code. `z3.wasm` and `z3.mjs` are z3 (MIT) built with emscripten (MIT): see [NOTICE](javascript/NOTICE).

@@ -1,0 +1,14 @@
+@cronch/z3's own code (index.js, index.d.ts and src/shim.cc) is licensed under
+the Apache License 2.0 (LICENSE).
+
+z3.wasm and z3.mjs are compiled from the following, which keep their own licenses.
+
+z3
+  https://github.com/Z3Prover/z3, at the tag in versions.env, built with the
+  options in scripts/build.sh. Copyright (c) Microsoft Corporation.
+  MIT license: LICENSE-z3.
+
+Emscripten
+  https://github.com/emscripten-core/emscripten, at the version in versions.env.
+  z3.mjs is its generated glue, and z3.wasm includes its runtime libraries.
+  MIT license, or the University of Illinois/NCSA license: LICENSE-emscripten.
