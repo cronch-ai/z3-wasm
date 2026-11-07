@@ -1,8 +1,8 @@
 {
 	"name": "@cronch/z3",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "z3 for Cloudflare Workers: single-threaded, growable memory, synchronous SMT-LIB checks",
-	"license": "MIT",
+	"license": "Apache-2.0 AND MIT",
 	"type": "module",
 	"exports": {
 		".": {
@@ -17,7 +17,11 @@
 		"index.d.ts",
 		"z3.mjs",
 		"z3.wasm",
-		"z3.sha256"
+		"z3.sha256",
+		"LICENSE",
+		"LICENSE-z3",
+		"LICENSE-emscripten",
+		"NOTICE"
 	],
 	"scripts": {
 		"build": "../scripts/build.sh",
