@@ -1,7 +1,7 @@
 /** z3's answer to a query. Only `sat` carries information a caller should act on: a model. */
 export type Checked =
 	| { readonly result: "sat" | "unsat" | "unknown"; readonly reply: string }
-	/** z3 reported an error before answering (`(error "…")`). */
+	/** z3 reported an error before answering (`(error "...")`). */
 	| { readonly result: "error"; readonly reply: string }
 	/** The query or budget wasn't accepted; z3 never saw it. */
 	| { readonly result: "refused"; readonly reason: string };
